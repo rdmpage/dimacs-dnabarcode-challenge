@@ -1,0 +1,211 @@
+<!doctype html public "-//W3O//DTD W3 HTML 2.0//EN">
+<HTML>
+
+<HEAD>
+
+<TITLE>Research Challenges Related to Data Analysis and the DNA Barcode of Life Initiative</TITLE>
+</HEAD>
+
+<BODY bgcolor=ffffff>
+<img src="http://dimacs.rutgers.edu/archive/images/dimacs_logo.gif">
+<hr>
+
+<H3> Call for Participation: Research Challenges Related to Data Analysis and the DNA Barcode of Life Initiative</H3>
+
+<HR>
+<P>
+We are pleased to announce research challenges from the Data Analysis Working Group of the Consortium for the Barcode of Life. For more information about the activities of this working group, see <a href="http://dimacs.rutgers.edu/archive/Workshops/DNAInitiative/">http://dimacs.rutgers.edu/Workshops/DNAInitiative/</a>
+     
+
+<h4>The DNA Barcode Data Analysis Initiative: Developing Tools for a New Generation of Biodiversity Data</h4>
+
+
+
+
+
+<p>The Data Analysis Working Group (DAWG) of the Consortium for the Barcode of 
+Life (CBOL) will hold the Second International Barcode of Life 
+Conference at Academia Sinica in Taipei, Taiwan, during the week of 
+17-21 September 2007.  See the <a href=http://dimacs.rutgers.edu/archive/Workshops/BarcodeDAS/SecondMeetingAnnouncement-30-May.pdf>Second Conference Announcement</a>.
+The Conference website is at <a href=http://www.dnabarcodes2007.org/>www.dnabarcodes2007.org</a>.
+
+
+<!--Add *****-->
+<p>Researchers and teams of researchers are invited to read the Research Challenges presented below, and to submit an abstract for presentation at the Taipei workshop using the <a href="http://www.bolinfonet.org/conferences/index.php/form/submission/3">Abstract Submission Form</a>.<b> (Please note</b> <A HREF="http://conference.iis.sinica.edu.tw/BOL2007/">registration for the workshop is required to hold your place.)</a>
+
+
+
+<p><b>What are DNA Barcode Data? </b> In the past two years, a series of studies have been published in which "DNA barcoding" was proposed as a tool for differentiating biological species. Barcoding is based on the assumption that short gene regions evolve at a rate that produces clear interspecific sequence divergence while retaining low intraspecific sequence variability. The cytochrome c oxidase subunit 1 mitochondrial region ("COI", 648 base pairs long) has emerged as a suitable barcode region for most taxonomic groups of animals.
+
+<p><b>Why are these data interesting? </b>   In the two years since barcoding was proposed, more than 60,000 barcode records representing 10,000 species have been collected.  The next two years will see an explosion of these standardized data in public repositories, creating an unparalleled opportunity to explore biological variability and its distribution within and among species.
+
+<p><b>Who is sponsoring this activity? </b>  The Consortium for the Barcode of Life (CBOL) is an international initiative supported by the Alfred P. Sloan Foundation and hosted by the Smithsonian Institution in Washington.  CBOL has created a Data Analysis Working Group (DAWG) that has organized and will oversee this initiative.  Funding for the activity is being provided by CBOL and the European Science Foundation, and additional funds are being requested from the U.S. National Science Foundation. 
+
+<p><b>What are the goals of this initiative? </b>   DNA barcodes are emerging as a global standard for assigning biological specimens to their proper species, and new and more reliable methods will be needed to analyze, interpret, and visualize these data.  The volume of barcode data is expanding rapidly.  More than 60,000 barcode records representing more than 10,000 species have already been determined.  In the next two years, these figures will probably increase to half a million barcode records for 50,000 species.  Their use for basic research in biology and applied use in a variety of settings is increasing, such as border control of agricultural pests and enforcement of laws that protect endangered species.  CBOL is constructing a Data Portal that will provide users with access to these data and the new analytical tools needed to handle the data.
+
+<p><b>What are some of the scientific and technical challenges associated with barcode data? </b>
+<ul>
+
+<li><b>Specimen identification versus "species discovery". </b>   Barcode data are being used in two ways: to assign unidentified specimens to known species, and to improve our knowledge of species differences (including the occasional discovery of potential new species.)  What analytical methods are appropriate for these different tasks, and what new approaches to "novelty detection" could be applied to barcode data?
+
+
+<li><b>Using character-based barcodes</b>.  The nucleotide found at each site (A, G, C or T) can be used as a data point, which opens an alternative approach to comparing specimens in terms of overall percent sequence similarity (or difference).  How can we analyze barcode data that are treated as discrete characters?
+
+
+<li><b>Measuring confidence</b>.  How should our confidence in decisions based on barcode data be calculated when we assign a specimen to a known species, or when we say that two clusters of specimens are distinct and may be separate species?  How should the quality of the sequence data, sample size, and our knowledge of the biology of populations and species be incorporated into confidence measures?
+
+<li><b>Optimizing sample size. </b>  How many specimens per species are needed to create a reliable "reference barcode" for a species?  These reference barcodes must have sufficient information about intraspecific variability to enable accurate assignment of unidentified specimens to their correct species.  How should these minimum sample sizes reflect the biology and evolutionary history of each species?
+
+<li><b>Shrinking the barcode. </b>   How long a gene sequence is needed to assign specimens to known species, and to uncover potentially new species?  Do we need multiple gene regions, or a single region, or just certain nucleotide sites within one region?
+
+
+</ul>
+
+
+<p><b>How can I find out more about the barcode initiative? </b>
+Two brochures provide a general overview of DNA barcoding: <a Href="http://phe.rockefeller.edu/barcode/docs/TenReasonsBarcoding.pdf">"Barcoding Life: Ten Reasons"</a>(available at http://phe.rockefeller.edu/barcode/docs/TenReasonsBarcoding.pdf) and <a Href="http://phe.rockefeller.edu/PDF_FILES/BLIllustrated26jan04print%20v1-3.pdf">"Barcoding Life, Illustrated"</a> (http://phe.rockefeller.edu/PDF_FILES/BLIllustrated26jan04print%20v1-3.pdf).
+
+
+
+<!--hr-->
+
+
+<p><b>DAWG I Challenge Problems: </b> 
+
+<p><b>I. The Dataset:</b>
+<p>The data tables given at <A href="http://dimacs.rutgers.edu/archive/Workshops/BarcodeDataSets/">http://dimacs.rutgers.edu/Workshops/BarcodeDataSets/</a> are based on real barcode data from species with some small modification and disguises to make it hard to identify the species. 
+
+<P>The dataset is organized in two data tables:
+
+<ol type=i>
+<li><A href="http://dimacs.rutgers.edu/archive/Workshops/BarcodeDataSets/train.xls">training.csv</a>: contains 1623 barcodes from 1623 specimens with their corresponding species names. The species names are computer generated by us in order to disguise the true names. They uniquely identify all the samples of each of the species. 
+
+<li><A href="http://dimacs.rutgers.edu/archive/Workshops/BarcodeDataSets/testblind.xls">testblind.csv</a>: contains 346 barcodes of specimens without
+species information. 
+</ol>
+
+
+<!-- Added 5/23/07 ******************-->
+
+<p><b>Example Datasets:</b>
+
+<p>This is a small selection of Barcode datasets extracted from BOLD. Although we encourage data analysis researchers to tray as many datasets as they can, we think it is useful to have a small list as of test datasets to make comparisons between methods. This list is of course expandable and changeable; please make any comments of suggestions.
+
+<ol>
+<li><b>Bats of Guyana: <A href=BatGuyana.csv>(BatGuyana.csv)</a> </b><br>
+DNA barcoding of Neotropical bats: species identification and discovery within Guyana, E. L. Clare, B. K. Lim, M. D. Engstrom, J. L. Eger, P. D. N. Hebert, doi:10:1111/j.1471-8286.2006.01657.x <a href=http://www.barcodeoflife.org/barcode/batsbirds/literature/MEN1657_final.pdf>(PDF)</a><p>
+
+
+
+<li><b>Birds of North America - Phase II:  <A href=Bird2.csv>(Bird2.csv)</a> </b><br>
+Comprehensive DNA barcode coverage of North American birds, K. C. R. Kerr, M. Y. Stoeckle, C. J. Dove, L. A. Weigt, C. M. Frances, P. D. N. Hebert, doi: 10.1111/j.1471-8286.2006.01670.x <a href=http://www.barcodeoflife.org/barcode/batsbirds/literature/MEN1670_final.pdf>(PDF)</a><p>
+
+<li><b>Hesperiidae of the ACG 1:  <A href=ACG.csv>(ACG.csv)</a>  </b><br>
+Hajibabaei M. , Janzen D. H., Burns J. M., Hallwachs W., and . Hebert P. D. N. (2006) DNA barcodes distinguish species of tropical Lepidoptera. PNAS 103, 968-971 
+<a href=http://www.pnas.org/cgi/content/full/103/4/968>(PDF)</a><p>
+
+<li><b>Fishes of Australia Container Part :   <A href=FishAustralia.csv>(FishAustralia.csv)</a> </b><br>
+DNA barcoding Australia.s fish species, Ward et. al, 2005. Phil. Trans. R. Soc. B (doi:10.1098/rstb.2005.1716 Published online) 
+<A href=http://www.fishbol.org/PDF/ward_etal_2005_philtrans.pdf>(PDF)</a>
+
+</ol>
+
+
+
+<!-- End if Addition 5/23/07 ******************-->
+
+
+
+
+<!--Revised 3/23/06 4:10pm*****************-->
+<p><b>II. List of challenges:</b> (Select one or more - or invent your own)
+
+<ol>
+
+<li><b>Assignment to known species</b>. Construct a classification rule using the training set that assigns specimens in the testing set to the species contained in the training set. Your classification rule should both maximize correct assignments and minimize incorrect assignments.
+
+<!--this was the last item now moved to number 2 on Friday 4/14/06-->
+<li><b>Data visualization</b>. Most barcode studies display results as phenetic cluster diagrams, which can easily be confused with phylogenetic trees.  An  important challenge is to develop new visualization methods to display and analyze barcode data.  These new methods should improve our ability to see and explore the degree and structure of variability within species and divergence among species. (Illustrate the new methods on the datasets provided.)
+
+
+<!--this was added as new item number 3 on Friday 4/14/06-->
+<li><b>Character-based approaches to barcode data</b>.   All barcoding studies to date have measured variation within species and divergence among species with phenetic measures - measures of distance based on overall similary (or dissimilarity) among barcode sequences.  Barcode sequences can also be compared using the nucleotides at equivalent sites in the sequence.  This approach parallels the use of homologous characters in phylogenetic analysis, and there may be significant synergies with those analytical methods.  Character-based approaches may also reduce drastically the barcode sequence lengths needed as diagnostics.  The challenge is to develop protocols and software that analyze character-based barcode data to assign specimens to known species and to identify barcode clusters that might be new species.
+
+
+<li><b>Detection of possible new species</b>. A good portion of the specimens in the testing set do not belong to the species included in the training set. Your classification rule should also be able to do two things in addition to assigning specimens to their correct species: (1) determine which specimens should not be assigned to known species, and (2) how these unclassified specimens in the testing set should be partitioned among potentially new species.  Your classification rule should therefore identify clusters among unclassified specimens in the testing set that might be new species. 
+
+<li><b>Confidence measures</b>. For some specimens the classification into known species might be unclear or borderline. One way to think more formally about these situations is to assign a measure of confidence to the assignments of specimens to species. Another is assigning measures of confidence to new clusters representing new species. The challenge is to propose ways to measure confidence of assignments to species and separation among clusters. 
+
+<li><b>Clusters within species</b>. All species include some level of variation among individuals and in some cases this variation takes the form of splits among local populations and even subspecies.  The challenge is to develop a classification rule that will identify clusters within individual species that rise above background variation and therefore might represent subspecies or other significant biological units. This is similar to Challenge 2 but instead of clustering a big dataset you will cluster many smaller datasets since you need to find clusters separately within each individual species. 
+
+<li><b>Sample size</b>. The first four challenges are doable as long as there is a sufficient number of specimens per species.  "Sufficient" will be a relative term, varying with a number of biological variables (population size, intraspecific variability, and gene flow are three important ones).  The challenge is to provide guidelines for sample size - guidelines that will allow your clustering method and/or classification rule to produce decisions with a determined level of confidence. You should also explore how your method is robust relative to small absolute and relative sample sizes.
+
+<li><b>Metric for barcode data</b>. One important question is related to the clustering and classification methods needed for the first five challenges: What kind of distance metrics should be used to measure the difference (similarity) between barcodes? Barcode data is high-dimensional and categorical, and very little is known about how to analyze this kind of data. Many "off-the-shelf" methods can be applied to this data. One approach to improving the results obtained with "off-the-shelf" methods is by tapping into the specific structure of the data. One might start by analyzing the variability structure within species and between species and understanding the "correlation structure" of the data in high dimensions. How can one exploit the complexity of this correlation structure to obtain better results than the standard methods? How can one model this structure? Finally, you should address how new methods you propose compare in performance to "off-the-shelf" methods.
+
+<li><b>New clustering methods</b>. Clustering methods are challenged by small datasets and are often not robust under dynamically changing datasets. Will your approaches lead to some new clustering methods? More generally, will barcoding lead to some new clustering methods? How about new Bayesian clustering methods? The challenge is to describe such new methods and illustrate them on the datasets given.
+
+
+
+</ol>
+ <!--****************-->
+
+
+<p>To learn more about DNA barcoding, please visit the websites for the Consortium for the Barcode of Life, (CBOL); <a href="http://www.barcoding.si.edu/">www.barcoding.si.edu</a> and the Guelph Centre for DNA Barcoding <a href="http://www.barcodeoflife.org">(www.barcodeoflife.org)</a>.  These sites provide links to scientific publications on barcoding as well as guidance to barcoding projects.
+
+
+<p><b>Are barcode data available to work with? </b>   DIMACS has assembled <a href="http://dimacs.rutgers.edu/archive/Workshops/BarcodeDataSets/">sets of barcode data</a>, and the <a href="http://www.boldsystems.org/views/projectlist.php?">Barcode of Life Database (BoLD)</a> at the University of Guelph's Centre for DNA Barcoding has many datasets that are available to the public.  
+
+<hr>
+<p><b>How can I get involved? </b>   The first steps are to:
+
+<ul><li><b>Select one or more of the technical challenges listed above, one or more of the DAWG I Challenge Problems or the more general ones, (or another one that you think will be important to barcoding)</b>, 
+<li>Develop a plan for research, development and testing that will lead to a new analytical protocol, analytical method and/or software tool, 
+<li>Assemble the team of computer scientists, taxonomists, statisticians, population geneticists and others that you will need to attack the technical challenge, and
+<li>Prepare and submit an application to participate in the September 17 - 21, 2007 workshop in Taipei using the Second International Barcode Conference <a href="http://www.bolinfonet.org/conferences/index.php/form/submission/3">Abstract Submission Form</a>. 
+
+</ul>
+
+
+<!-- *******************Travel Info from 2006************
+<p><b>Is funding available? </b> Travel stipends will be made available to 20 graduate students, post-docs and new faculty members at U.S. institutions, and 15 at European institutions (contingent on the availability of funding).  Each of the recipients of a stipend will give a presentation in Paris about the technical challenge they have selected, the approach they propose, and the anticipated product.  The DAWG Steering Committee will provide feedback to the presenters.
+
+<p>For information on travel support and travel application form, see: <a href="http://dimacs.rutgers.edu/archive/Workshops/DNABarcode/travelsupport.html">http://dimacs.rutgers.edu/Workshops/DNABarcode/travelsupport.html</a>.-->
+
+
+
+<!-- *******************Competition info from 2006************
+<p><b>Will this be a competition, and if so, how will the results of the competition be judged?  </b>
+
+<p>Competitions will be conducted in some cases, and participants will be challenged to develop the most effective algorithms and software for a particular function.  In these cases, the DAWG Steering Committee will use test datasets to evaluate the performance of software that is developed and presented by participants.  Participants who submit the most effective algorithms and software will be invited to be presenters at the international conference.  
+
+<p>Individuals may apply for these awards in June 2006, at the time they submit their applications to be presenters at the July 6 - 8, 2006  workshop.  Applicants will be asked to submit an abstract for their workshop presentations and an application in which they present:
+<ul><li>The research question or technical challenge they are addressing;
+	<li>The approach being used;
+	<li>Preliminary results;
+	<li>The anticipated form of deliverable from the project (e.g., analytical protocol, software); and
+	<li>The potential benefits to DNA barcoding the project will offer.
+	</ul>
+
+<p>Award decisions will be made by the Steering Committee of the Data Analysis Working Group.  Efforts will be made to support research on different technical challenges and to promote the participation of underrepresented groups.
+<p>Other technical challenges will not be competitions.  Participants will be asked to research issues related to data interpretation relative to underlying parameters of population biology, for example.  Their applications to be presenters at the international conference will be judged on scientific merit and potential benefits to the Barcode Initiative.
+<p><b>How will the results of the initiative be disseminated? </b>  Presenters at the international conference will be invited to submit manuscripts for publication in the conference proceedings volume.  The Royal Society published the proceedings of the First International Barcode Conference as a themed issue of Philosophical Transactions in Biological Sciences.  Presenters will also be invited to submit their software tools and protocols for incorporation into the Data Portal that is being developed by CBOL.
+-->
+<HR>
+
+
+<A HREF="http://dimacs.rutgers.edu/archive/Workshops/index.html">
+<IMG SRC="/images/buttons/go_top_btn.gif"> Other Workshops</A>
+<hr>
+
+<A HREF="http://dimacs.rutgers.edu/archive/index.html">
+<IMG SRC="/icons/home_dimacs.gif"> DIMACS Homepage</A>
+
+
+<HR>
+<a href="http://dimacs.rutgers.edu/archive/People/Staff.html">Contacting the Center</a><br>
+Document last modified on May 31, 2007. 
+
+
+</BODY>
+
+</HTML>

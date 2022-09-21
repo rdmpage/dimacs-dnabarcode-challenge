@@ -1,0 +1,69 @@
+/*************************************************
+SSSKernel v0.1
+
+Sparse Spatial Sample Kernels
+
+Reference:
+@inproceedings{icpr2008sssk,
+  author = {Pavel Kuksa and Pai-Hsi Huang and Vladimir Pavlovic},
+  title =  {Fast Protein Homology and Fold Detection with
+            Sparse Spatial Sample Kernels},
+  booktitle = {ICPR},
+  year = {2008},
+  pages = {}
+}
+****************************************************/
+
+Installation:
+-------------
+Copy the tar file SSSKernel-0.1c.tar.gz to your directory
+> tar xzvf SSSKernel-0.1c.tar.gz
+> cd SSSKernel-0.1c
+> make
+
+This will produce object files and executables for spatial kernel
+computations:
+tripleKernel : computes triple kernel matrices
+doubleKernel : computes double kernel matrices
+
+
+Usage:
+------
+to compute triple(1,d) kernel:
+./tripleKernel <Sequence-file> <d> <Alphabet-size>
+to compute double(1,d) kernel:
+./doubleKernel <Sequence-file> <d> <Alphabet-size>
+where
+<Sequence-file> is the file with sequence data (one sequence per line,
+with sequence elements separated by space, all sequence elements are
+assumed to be in the range [0, <AlphabetSize> - 1]), see 
+example_seq.txt for example of the sequence file format.
+<d> is the kernel parameter (max. distance between samples)
+<Alphabet-size> is the size of the alphabet
+
+Output kernel matrix is written into
+  kernel.txt
+file.
+
+There are also files with sample sequences
+ example_seq.txt
+and corresponding reference kernel matrices
+ example_kernel_double.txt and
+ example_kernel_triple.txt
+(use 
+  ./doubleKernel example_seq.txt 5 1024
+  ./tripleKernel example_seq.txt 3 1024
+ to reproduce).
+
+ToDo:
+-----
+- This is a preliminary version for research purposes.
+  Parameters, option handling, checking need to be added.
+
+Authors:
+--------
+
+Pavel Kuksa
+pkuksa@cs.rutgers.edu
+Vladimir Pavlovic
+vladimir@cs.rutgers.edu

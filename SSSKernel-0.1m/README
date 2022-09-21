@@ -1,0 +1,75 @@
+/*************************************************
+SSSKernel v0.1
+
+Sparse Spatial Sample Kernels
+
+Reference:
+@inproceedings{icpr2008sssk,
+  author = {Pavel Kuksa and Pai-Hsi Huang and Vladimir Pavlovic},
+  title =  {Fast Protein Homology and Fold Detection with
+            Sparse Spatial Sample Kernels},
+  booktitle = {ICPR},
+  year = {2008},
+  pages = {}
+}
+****************************************************/
+
+Installation:
+-------------
+Copy the tar file SSSKernel-0.1m.tar.gz to your directory
+> tar xzvf SSSKernel-0.1m.tar.gz
+> cd SSSKernel-0.1m
+
+There are matlab files that compute spatial kernels:
+tripleKernel.m : computes triple kernel matrices
+doubleKernel.m : computes double kernel matrices
+
+They rely on precompiled matlab mex files *.mex* that implement
+various speed critical parts of the algorithms.
+If the mex files don't work, you may need to recompile them (*.c files)
+from matlab using mex.
+
+Usage:
+------
+K = tripleKernel(S,d,na); % to compute triple(1,d) kernel
+K = doubleKernel(S,d,na); % to compute double(1,d) kernel
+where
+S - cell array of strings, each string is a double array with elements
+in the range [0,na-1], where na is the alphabet size.
+d - max. distance between samples (eg. d=5)
+na - alphabet size
+
+See also example_kernel.m and help for *.m files
+
+IMPORTANT: each sequence S{i} is assumed to a double array
+with elements in the range [0,na-1], where na is the alphabet size.
+
+There are also files with sample sequences
+ example_seq.mat
+and corresponding reference kernel matrices
+ example_kernel_double.mat and
+ example_kernel_triple.mat
+(use 
+  K=doubleKernel(seq,5,1024);
+  K=tripleKernel(seq,3,1024);
+ to reproduce).
+
+Examples:
+---------
+S = {[0 1 0 2 3],[0 2 0 1 3]}; % some sequences
+K = tripleKernel(S,3,4); % compute triple kernel
+or try
+example_kernel.m
+
+ToDo:
+-----
+- This is a preliminary version for research purposes.
+  Parameters, option handling, checking need to be added.
+
+Authors:
+--------
+
+Pavel Kuksa
+pkuksa@cs.rutgers.edu
+Vladimir Pavlovic
+vladimir@cs.rutgers.edu

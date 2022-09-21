@@ -1,2 +1,5 @@
 
 .DS_Store
+*.o
+SSSKernel-0.1c/doubleKernel
+SSSKernel-0.1c/tripleKernel
